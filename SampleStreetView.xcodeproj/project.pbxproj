@@ -17,6 +17,7 @@
 		34A779E826131CF000BBA64E /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34A779E726131CF000BBA64E /* APIKey.plist */; };
 		34A77A0326135C3E00BBA64E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A77A0226135C3E00BBA64E /* MapViewController.swift */; };
 		34A77A1B261380EB00BBA64E /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A77A1A261380EB00BBA64E /* UIImageExtension.swift */; };
+		34A77A232613877A00BBA64E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A77A222613877A00BBA64E /* SceneDelegate.swift */; };
 		777E24A63E30D52858FFCE7C /* Pods_SampleStreetView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F0395FD0008D1CACB3220D /* Pods_SampleStreetView.framework */; };
 		BD41F33795C32EA6AD7112F8 /* Pods_SampleStreetViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95096EFB4CCA0C99E733E0 /* Pods_SampleStreetViewTests.framework */; };
 		C3F318AB230C184FDAF4FD73 /* Pods_SampleStreetView_SampleStreetViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3441840433677919D34EFF3 /* Pods_SampleStreetView_SampleStreetViewUITests.framework */; };
@@ -59,6 +60,7 @@
 		34A779E726131CF000BBA64E /* APIKey.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
 		34A77A0226135C3E00BBA64E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		34A77A1A261380EB00BBA64E /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		34A77A222613877A00BBA64E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A787890C912F0AC546012396 /* Pods-SampleStreetViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleStreetViewTests.release.xcconfig"; path = "Target Support Files/Pods-SampleStreetViewTests/Pods-SampleStreetViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB64830BA38B483B4B8590D7 /* Pods-SampleStreetView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleStreetView.release.xcconfig"; path = "Target Support Files/Pods-SampleStreetView/Pods-SampleStreetView.release.xcconfig"; sourceTree = "<group>"; };
 		CD8AEFF122414C8EC171BD33 /* Pods-SampleStreetView-SampleStreetViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleStreetView-SampleStreetViewUITests.release.xcconfig"; path = "Target Support Files/Pods-SampleStreetView-SampleStreetViewUITests/Pods-SampleStreetView-SampleStreetViewUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				34A779E026131C1F00BBA64E /* ViewController */,
 				34A779E126131C2800BBA64E /* View */,
 				34A779AC26131BF200BBA64E /* AppDelegate.swift */,
+				34A77A222613877A00BBA64E /* SceneDelegate.swift */,
 				34A779BA26131BF600BBA64E /* Info.plist */,
 				34A779E726131CF000BBA64E /* APIKey.plist */,
 			);
@@ -441,6 +444,7 @@
 				34A77A0326135C3E00BBA64E /* MapViewController.swift in Sources */,
 				34A779E326131CD100BBA64E /* KeyManager.swift in Sources */,
 				34A77A1B261380EB00BBA64E /* UIImageExtension.swift in Sources */,
+				34A77A232613877A00BBA64E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
