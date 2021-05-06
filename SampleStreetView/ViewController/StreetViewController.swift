@@ -8,14 +8,14 @@
 import UIKit
 import GoogleMaps
 
-protocol StreetViewControllerDelegate: class{
+protocol StreetViewControllerDelegate: AnyObject{
     func didMove(to location: CLLocationCoordinate2D, heading: CLLocationDegrees)
     func didMoveCamera(to heading: CLLocationDegrees)
 }
 
 final class StreetViewController: UIViewController {
     
-    @IBOutlet weak var panoView: GMSPanoramaView!
+    @IBOutlet private weak var panoView: GMSPanoramaView!
     weak var delegate: StreetViewControllerDelegate?
 
     override func viewDidLoad() {

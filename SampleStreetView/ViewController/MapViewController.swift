@@ -8,7 +8,7 @@
 import UIKit
 import GoogleMaps
 
-protocol MapViewControllerDelegate: class{
+protocol MapViewControllerDelegate: AnyObject{
     func didTapMarker(of location: CLLocationCoordinate2D)
 }
 
