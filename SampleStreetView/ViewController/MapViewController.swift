@@ -40,10 +40,11 @@ final class MapViewController: UIViewController {
         streetVC.delegate = self
     }
     
-    private func makeMarker(position: CLLocationCoordinate2D){
+    private func makeMarker(position: CLLocationCoordinate2D, heading: CLLocationDegrees?){
         mapView.clear()
         let marker = GMSMarker(position: position)
         marker.icon = UIImage(named: "marker")?.resize(size: CGSize(width: 35, height: 35))
+        marker.rotation = heading ?? 0.0
         marker.map = mapView
         presentingMarker = marker
     }
@@ -52,13 +53,13 @@ final class MapViewController: UIViewController {
 extension MapViewController: GMSMapViewDelegate{
     
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-        makeMarker(position: coordinate)
+        makeMarker(position: coordinate, heading: nil)
         mapView.animate(toLocation: coordinate)
         delegate?.didTapMarker(of: coordinate)
     }
     
     func mapView(_ mapView: GMSMapView, didTapPOIWithPlaceID placeID: String, name: String, location: CLLocationCoordinate2D) {
-        makeMarker(position: location)
+        makeMarker(position: location, heading: nil)
         mapView.animate(toLocation: location)
         delegate?.didTapMarker(of: location)
     }
@@ -67,8 +68,7 @@ extension MapViewController: GMSMapViewDelegate{
 extension MapViewController: StreetViewControllerDelegate{
     
     func didMove(to location: CLLocationCoordinate2D, heading: CLLocationDegrees) {
-        makeMarker(position: location)
-        presentingMarker.rotation = heading
+        makeMarker(position: location, heading: heading)
         mapView.animate(toLocation: location)
     }
     
